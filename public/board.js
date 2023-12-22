@@ -18,7 +18,8 @@ let x1, x2, y1, y2;
 let text = '';
 
 socket.on('draw', (data) => {
-  drawOnCanvas(data);
+  const obj = drawOnCanvas(data);
+  canvas.add(obj);
 });
 
 socket.on('joinBoard', (requestedBoardId) => {

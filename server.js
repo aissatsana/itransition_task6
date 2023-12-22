@@ -12,7 +12,7 @@ app.set('views', 'views');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-mongoose.connect('mongodb://localhost:27017/task6');
+mongoose.connect('mongodb+srv://user:userpassword@cluster0.tei2s5c.mongodb.net/?retryWrites=true&w=majority');
 const connection = mongoose.connection;
 
 connection.once('open', () => {

@@ -1,0 +1,46 @@
+.bg-img {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  z-index: -10;
+}
+
+.board-link {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      .board-item{
+        border-color: black;
+      } 
+    }
+}
+  
+.board-item {
+  border: 3px solid #ccc;
+  padding: 10px;
+  width: 300px; 
+}
+  
+.board-name {
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: 0;
+  }
+}
+  
+.board-img img {
+  max-width: 100%;
+  height: auto;
+}
+  

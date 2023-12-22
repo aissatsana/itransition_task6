@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Чтобы предотвратить прокрутку страницы */
+}
+  
+.canvas-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid grey;
+    overflow: auto; /* Добавляет полосы прокрутки при необходимости */
+}
+  
+.canvas {
+    display: block;
+    margin: 0 auto; /* Цвет фона холста */
+}
+
+.tools-container {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to right, #ffffff, #F8F9FA);
+}
+
+.input--color {
+    border: 1px solid black;
+    height: 30px;
+    width: 100px;
+}
+
+.select--shape {
+    width: 100px;
+}
+/* 
+.btn {
+    background-color: purple;
+} */
